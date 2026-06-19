@@ -8,156 +8,106 @@
 </head>
 
 <body>
-  <div class="page-shell">
+  <div class="site">
 
-    <header class="topbar">
-      <div class="brand">
-        <div class="brand-mark">Δ</div>
+    <header class="header">
+      <div class="logo">
+        <div class="delta">Δ</div>
         <div>
-          <p class="brand-name">DELTA MATEMÁTICA</p>
-          <p class="brand-subtitle">Middle School Mathematics</p>
+          <h2>DELTA MATEMÁTICA</h2>
+          <p>Interactive Middle School Mathematics</p>
         </div>
       </div>
 
-      <nav class="nav">
+      <nav>
+        <a href="#library">Library</a>
         <a href="#grades">Grades</a>
-        <a href="#guides">Guides</a>
-        <a href="#games">Games</a>
-        <a href="#tests">Practice Tests</a>
+        <a href="#teacher">Teacher</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero-text">
-          <p class="eyebrow">INTERACTIVE MATH WEBSITE</p>
+    <main class="hero">
+      <section class="hero-left">
+        <p class="label">MATHEMATICS LEARNING HUB</p>
 
-          <h1>
-            Learn Mathematics Through
-            <span>Guides, Games, and Practice.</span>
-          </h1>
+        <h1>
+          Explore Math Through
+          <span>Interactive Learning.</span>
+        </h1>
 
-          <p class="hero-description">
-            A growing collection of interactive lessons, live scoring games,
-            and practice tests for middle school mathematics.
+        <p class="description">
+          A professional classroom website for lessons, practice tests,
+          live games, and interactive mathematics guides.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#library" class="main-button">Explore Library</a>
+          <a href="#grades" class="ghost-button">Choose Grade</a>
+        </div>
+      </section>
+
+      <section class="hero-right">
+        <div class="feature-box">
+          <p class="small-title">DELTA SYSTEM</p>
+          <h3>Guides · Games · Practice</h3>
+          <p>
+            Organized by grade level, strand, topic, and skill.
           </p>
-
-          <div class="hero-actions">
-            <button onclick="showSection('grades')">Explore Grades</button>
-            <button class="secondary" onclick="showSection('guides')">View Guides</button>
-          </div>
         </div>
-
-        <div class="hero-visual">
-          <div class="math-card main-card">
-            <p class="card-label">Featured</p>
-            <h2>Delta Learning Hub</h2>
-            <p>Organized by grade level, strand, topic, and skill.</p>
-          </div>
-
-          <div class="floating-card card-one">y = ax + b</div>
-          <div class="floating-card card-two">25%</div>
-          <div class="floating-card card-three">√64 = 8</div>
-        </div>
-      </section>
-
-      <section id="grades" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">GRADE LEVELS</p>
-          <h2>Choose a Grade</h2>
-        </div>
-
-        <div class="grid three">
-          <article class="tile" onclick="showMessage('Grade 6 will contain fractions, decimals, percent, geometry, and interactive review games.')">
-            <span>01</span>
-            <h3>Grade 6</h3>
-            <p>Lessons, practice activities, and review games.</p>
-          </article>
-
-          <article class="tile" onclick="showMessage('Grade 7 will contain proportional relationships, algebra, integers, equations, and geometry.')">
-            <span>02</span>
-            <h3>Grade 7</h3>
-            <p>Proportion, algebra, equations, and problem solving.</p>
-          </article>
-
-          <article class="tile" onclick="showMessage('Grade 8 will contain functions, advanced algebra, geometry, and preparation activities.')">
-            <span>03</span>
-            <h3>Grade 8</h3>
-            <p>Functions, graphing, algebra, and deeper reasoning.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="guides" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">INTERACTIVE GUIDES</p>
-          <h2>Learning Modules</h2>
-        </div>
-
-        <div class="grid two">
-          <article class="wide-card">
-            <h3>Foundations of Middle School Mathematics</h3>
-            <p>Numbers, algebra, geometry, data, and problem-solving strands.</p>
-            <button onclick="showMessage('This will link to your Foundations interactive guide later.')">Open Guide</button>
-          </article>
-
-          <article class="wide-card">
-            <h3>Proportional Relationships</h3>
-            <p>Direct proportion, inverse proportion, tables, graphs, and word problems.</p>
-            <button onclick="showMessage('This will link to your Proportional Relationships guide later.')">Open Guide</button>
-          </article>
-        </div>
-      </section>
-
-      <section id="games" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">LIVE GAMES</p>
-          <h2>Classroom Activities</h2>
-        </div>
-
-        <div class="grid two">
-          <article class="wide-card">
-            <h3>Live Scoring Games</h3>
-            <p>Games with student login, teacher dashboard, scores, and results.</p>
-            <button onclick="showMessage('This will connect to your Supabase and Firebase games later.')">View Games</button>
-          </article>
-
-          <article class="wide-card">
-            <h3>Practice Battles</h3>
-            <p>Math challenges, randomized questions, and live progress tracking.</p>
-            <button onclick="showMessage('This will contain Algebra Triangle Battle and future games.')">View Battles</button>
-          </article>
-        </div>
-      </section>
-
-      <section id="tests" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">PRACTICE TESTS</p>
-          <h2>Assessment Center</h2>
-        </div>
-
-        <div class="grid two">
-          <article class="wide-card">
-            <h3>One-Time Practice Tests</h3>
-            <p>Students complete a test once, and the final score is registered.</p>
-            <button onclick="showMessage('This will contain your one-attempt practice tests later.')">Open Tests</button>
-          </article>
-
-          <article class="wide-card">
-            <h3>Teacher Results</h3>
-            <p>View student scores, answers, correct items, and incorrect items.</p>
-            <button onclick="showMessage('This will become a teacher-only section later.')">Teacher View</button>
-          </article>
-        </div>
-      </section>
-
-      <section class="status-panel">
-        <p id="message">Welcome to Delta Matemática. Select a section to begin.</p>
       </section>
     </main>
 
+    <section id="library" class="section">
+      <p class="label">MAIN LIBRARY</p>
+      <h2 class="section-title">Choose a Section</h2>
+
+      <div class="card-grid">
+        <article class="card" onclick="showMessage('Grade 6 section will contain fractions, decimals, percent, geometry, and review games.')">
+          <h3>Grade 6</h3>
+          <p>Lessons, activities, games, and assessments for Grade 6.</p>
+        </article>
+
+        <article class="card" onclick="showMessage('Grade 7 section will contain proportions, integers, equations, algebra, and geometry.')">
+          <h3>Grade 7</h3>
+          <p>Proportions, algebra, equations, and problem-solving activities.</p>
+        </article>
+
+        <article class="card" onclick="showMessage('Grade 8 section will contain functions, graphing, advanced algebra, and geometry.')">
+          <h3>Grade 8</h3>
+          <p>Functions, graphing, algebra, and preparation activities.</p>
+        </article>
+
+        <article class="card" onclick="showMessage('Interactive Guides will contain your complete lessons and learning modules.')">
+          <h3>Interactive Guides</h3>
+          <p>Professional math guides with examples, visuals, and practice.</p>
+        </article>
+
+        <article class="card" onclick="showMessage('Live Games will contain your Supabase and Firebase classroom scoring games.')">
+          <h3>Live Games</h3>
+          <p>Student login, live scoring, teacher dashboard, and results.</p>
+        </article>
+
+        <article class="card" onclick="showMessage('Practice Tests will contain one-attempt tests and recorded final scores.')">
+          <h3>Practice Tests</h3>
+          <p>Structured practice tests for review and assessment.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="grades" class="info-panel">
+      <h2>Built for Classroom Use</h2>
+      <p>
+        This website will become the main entrance to your Delta Matemática
+        lessons, games, practice tests, and teacher tools.
+      </p>
+    </section>
+
+    <section id="teacher" class="message-panel">
+      <p id="message">Welcome to Delta Matemática. Select a section to begin.</p>
+    </section>
+
     <footer>
-      <p>© 2026 Delta Matemática · Designed for Interactive Learning</p>
+      <p>© 2026 Delta Matemática · Interactive Mathematics Website</p>
     </footer>
 
   </div>
