@@ -18,9 +18,6 @@ body {
   align-items: center;
   background: #181818;
   border-bottom: 1px solid rgba(0, 194, 255, 0.25);
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
 .logo {
@@ -54,11 +51,6 @@ nav a:hover {
   margin-left: 5px;
 }
 
-.lang-buttons button:hover {
-  background: #00c2ff;
-  color: #121212;
-}
-
 .hero {
   min-height: 82vh;
   padding: 70px 7%;
@@ -67,7 +59,7 @@ nav a:hover {
   align-items: center;
   gap: 40px;
   background:
-    radial-gradient(circle at top right, rgba(0, 194, 255, 0.18), transparent 35%),
+    radial-gradient(circle at top right, rgba(0, 194, 255, 0.25), transparent 35%),
     linear-gradient(135deg, #121212, #1b1b1b);
 }
 
@@ -78,11 +70,10 @@ nav a:hover {
   padding: 8px 18px;
   border-radius: 30px;
   margin-bottom: 24px;
-  font-size: 14px;
 }
 
 .hero h1 {
-  font-size: clamp(44px, 7vw, 86px);
+  font-size: 72px;
   line-height: 1;
   margin-bottom: 24px;
 }
@@ -128,14 +119,14 @@ nav a:hover {
 .math-card {
   height: 140px;
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(0, 194, 255, 0.35);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(0, 194, 255, 0.45);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 60px;
   color: #00c2ff;
-  box-shadow: 0 0 30px rgba(0, 194, 255, 0.12);
+  box-shadow: 0 0 35px rgba(0, 194, 255, 0.2);
 }
 
 .portals {
@@ -147,17 +138,10 @@ nav a:hover {
 
 .portal-card {
   background: #1e1e1e;
-  border: 1px solid rgba(0, 194, 255, 0.2);
+  border: 1px solid rgba(0, 194, 255, 0.25);
   border-radius: 22px;
   padding: 28px;
   min-height: 220px;
-  transition: 0.3s;
-}
-
-.portal-card:hover {
-  transform: translateY(-8px);
-  border-color: #00c2ff;
-  box-shadow: 0 0 35px rgba(0, 194, 255, 0.15);
 }
 
 .portal-card h2 {
@@ -202,12 +186,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .hero-visual {
-    grid-template-columns: repeat(2, 110px);
-  }
-
-  .math-card {
-    height: 110px;
+  .hero h1 {
     font-size: 46px;
   }
 }
