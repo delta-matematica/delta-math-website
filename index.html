@@ -6,112 +6,102 @@
   <title>Delta Matemática</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="site">
 
-    <header class="header">
-      <div class="logo">
-        <div class="delta">Δ</div>
-        <div>
-          <h2>DELTA MATEMÁTICA</h2>
-          <p>Interactive Middle School Mathematics</p>
-        </div>
-      </div>
+<header class="navbar">
+  <div class="logo">Δ DELTA MATEMÁTICA</div>
 
-      <nav>
-        <a href="#library">Library</a>
-        <a href="#grades">Grades</a>
-        <a href="#teacher">Teacher</a>
-      </nav>
-    </header>
+  <nav>
+    <a href="#" data-en="Home" data-es="Inicio">Home</a>
+    <a href="#" data-en="Students" data-es="Estudiantes">Students</a>
+    <a href="#" data-en="Teachers" data-es="Profesores">Teachers</a>
+    <a href="#" data-en="SIMCE & PAES" data-es="SIMCE y PAES">SIMCE & PAES</a>
+  </nav>
 
-    <main class="hero">
-      <section class="hero-left">
-        <p class="label">MATHEMATICS LEARNING HUB</p>
+  <div class="lang-buttons">
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('es')">ES</button>
+  </div>
+</header>
 
-        <h1>
-          Explore Math Through
-          <span>Interactive Learning.</span>
-        </h1>
+<section class="hero">
+  <div class="hero-content">
+    <p class="badge" data-en="Interactive Mathematics Platform" data-es="Plataforma Interactiva de Matemática">
+      Interactive Mathematics Platform
+    </p>
 
-        <p class="description">
-          A professional classroom website for lessons, practice tests,
-          live games, and interactive mathematics guides.
-        </p>
+    <h1 data-en="DELTA MATEMÁTICA" data-es="DELTA MATEMÁTICA">
+      DELTA MATEMÁTICA
+    </h1>
 
-        <div class="hero-buttons">
-          <a href="#library" class="main-button">Explore Library</a>
-          <a href="#grades" class="ghost-button">Choose Grade</a>
-        </div>
-      </section>
+    <p class="subtitle"
+       data-en="Guided examples, quizzes, games, tests, teacher resources, SIMCE, PAES, puzzles, and mathematical investigations."
+       data-es="Ejemplos guiados, cuestionarios, juegos, pruebas, recursos para profesores, SIMCE, PAES, desafíos e investigaciones matemáticas.">
+       Guided examples, quizzes, games, tests, teacher resources, SIMCE, PAES, puzzles, and mathematical investigations.
+    </p>
 
-      <section class="hero-right">
-        <div class="feature-box">
-          <p class="small-title">DELTA SYSTEM</p>
-          <h3>Guides · Games · Practice</h3>
-          <p>
-            Organized by grade level, strand, topic, and skill.
-          </p>
-        </div>
-      </section>
-    </main>
-
-    <section id="library" class="section">
-      <p class="label">MAIN LIBRARY</p>
-      <h2 class="section-title">Choose a Section</h2>
-
-      <div class="card-grid">
-        <article class="card" onclick="showMessage('Grade 6 section will contain fractions, decimals, percent, geometry, and review games.')">
-          <h3>Grade 6</h3>
-          <p>Lessons, activities, games, and assessments for Grade 6.</p>
-        </article>
-
-        <article class="card" onclick="showMessage('Grade 7 section will contain proportions, integers, equations, algebra, and geometry.')">
-          <h3>Grade 7</h3>
-          <p>Proportions, algebra, equations, and problem-solving activities.</p>
-        </article>
-
-        <article class="card" onclick="showMessage('Grade 8 section will contain functions, graphing, advanced algebra, and geometry.')">
-          <h3>Grade 8</h3>
-          <p>Functions, graphing, algebra, and preparation activities.</p>
-        </article>
-
-        <article class="card" onclick="showMessage('Interactive Guides will contain your complete lessons and learning modules.')">
-          <h3>Interactive Guides</h3>
-          <p>Professional math guides with examples, visuals, and practice.</p>
-        </article>
-
-        <article class="card" onclick="showMessage('Live Games will contain your Supabase and Firebase classroom scoring games.')">
-          <h3>Live Games</h3>
-          <p>Student login, live scoring, teacher dashboard, and results.</p>
-        </article>
-
-        <article class="card" onclick="showMessage('Practice Tests will contain one-attempt tests and recorded final scores.')">
-          <h3>Practice Tests</h3>
-          <p>Structured practice tests for review and assessment.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="grades" class="info-panel">
-      <h2>Built for Classroom Use</h2>
-      <p>
-        This website will become the main entrance to your Delta Matemática
-        lessons, games, practice tests, and teacher tools.
-      </p>
-    </section>
-
-    <section id="teacher" class="message-panel">
-      <p id="message">Welcome to Delta Matemática. Select a section to begin.</p>
-    </section>
-
-    <footer>
-      <p>© 2026 Delta Matemática · Interactive Mathematics Website</p>
-    </footer>
-
+    <div class="hero-buttons">
+      <button data-en="Enter Student Zone" data-es="Entrar a Zona de Estudiantes">Enter Student Zone</button>
+      <button class="outline" data-en="Teacher Resources" data-es="Recursos para Profesores">Teacher Resources</button>
+    </div>
   </div>
 
-  <script src="script.js"></script>
+  <div class="hero-visual">
+    <div class="math-card">π</div>
+    <div class="math-card">√</div>
+    <div class="math-card">%</div>
+    <div class="math-card">Δ</div>
+  </div>
+</section>
+
+<section class="portals">
+
+  <div class="portal-card">
+    <h2 data-en="Student Zone" data-es="Zona de Estudiantes">Student Zone</h2>
+    <p data-en="Interactive activities for Grades 4, 5, 6, 7, and 8."
+       data-es="Actividades interactivas para 4°, 5°, 6°, 7° y 8°.">
+       Interactive activities for Grades 4, 5, 6, 7, and 8.
+    </p>
+  </div>
+
+  <div class="portal-card">
+    <h2 data-en="Teacher Zone" data-es="Zona de Profesores">Teacher Zone</h2>
+    <p data-en="Games, competitions, live scoring, and worksheet generators."
+       data-es="Juegos, competencias, puntaje en vivo y generadores de guías.">
+       Games, competitions, live scoring, and worksheet generators.
+    </p>
+  </div>
+
+  <div class="portal-card">
+    <h2 data-en="SIMCE & PAES Center" data-es="Centro SIMCE y PAES">SIMCE & PAES Center</h2>
+    <p data-en="Practice tests and national assessment preparation."
+       data-es="Pruebas de práctica y preparación para evaluaciones nacionales.">
+       Practice tests and national assessment preparation.
+    </p>
+  </div>
+
+  <div class="portal-card">
+    <h2 data-en="Recreational Math" data-es="Matemática Recreativa">Recreational Math</h2>
+    <p data-en="Puzzles, tricks, logic problems, and weekly challenges."
+       data-es="Puzzles, trucos, problemas de lógica y desafíos semanales.">
+       Puzzles, tricks, logic problems, and weekly challenges.
+    </p>
+  </div>
+
+  <div class="portal-card">
+    <h2 data-en="Math Investigations" data-es="Investigaciones Matemáticas">Math Investigations</h2>
+    <p data-en="Interesting mathematical topics for exploration and research."
+       data-es="Temas matemáticos interesantes para explorar e investigar.">
+       Interesting mathematical topics for exploration and research.
+    </p>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Delta Matemática</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
