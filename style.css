@@ -187,9 +187,16 @@ body {
 
 footer {
   text-align: center;
-  padding: 28px;
+  padding: 34px 20px;
   color: #9da3ad;
   background: #0c0e11;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  line-height: 1.7;
+}
+
+footer p:first-child {
+  color: #d8dce3;
+  font-weight: 700;
 }
 
 @media (max-width: 1100px) {
