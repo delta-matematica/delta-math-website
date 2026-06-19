@@ -3,102 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<div class="logo">Δ DELTA MATEMÁTICA</div>
-  <link rel="stylesheet" href="./style.css?v=2" />
+  <title>Delta Matemática</title>
+  <link rel="stylesheet" href="./style.css?v=3" />
 </head>
+
 <body>
 
 <header class="navbar">
-  <div class="logo">
-  <img src="logo.png" alt="Delta Matemática Logo">
-</div>
+  <div class="logo-area">
+    <img src="logo.png" alt="Delta Matemática Logo" class="logo-img">
+  </div>
 
-  <nav>
-    <a href="#" data-en="Home" data-es="Inicio">Home</a>
-    <a href="#" data-en="Students" data-es="Estudiantes">Students</a>
-    <a href="#" data-en="Teachers" data-es="Profesores">Teachers</a>
-    <a href="#" data-en="SIMCE & PAES" data-es="SIMCE y PAES">SIMCE & PAES</a>
+  <nav class="nav-links">
+    <a href="#" class="active" data-en="Home" data-es="Inicio">Home</a>
+    <a href="#" data-en="Courses" data-es="Cursos">Courses</a>
+    <a href="#" data-en="SIMCE" data-es="SIMCE">SIMCE</a>
+    <a href="#" data-en="PAES" data-es="PAES">PAES</a>
+    <a href="#" data-en="Resources" data-es="Recursos">Resources</a>
+    <a href="#" data-en="Games" data-es="Juegos">Games</a>
+    <a href="#" data-en="Competitions" data-es="Competencias">Competitions</a>
+    <a href="#" data-en="Contact" data-es="Contacto">Contact</a>
   </nav>
 
-  <div class="lang-buttons">
-    <button onclick="setLanguage('en')">EN</button>
-    <button onclick="setLanguage('es')">ES</button>
+  <div class="right-actions">
+    <button onclick="setLanguage('en')" class="lang-btn">EN</button>
+    <button onclick="setLanguage('es')" class="lang-btn">ES</button>
   </div>
 </header>
 
+<main>
+
 <section class="hero">
   <div class="hero-content">
-    <p class="badge" data-en="Interactive Mathematics Platform" data-es="Plataforma Interactiva de Matemática">
-      Interactive Mathematics Platform
+    <p class="badge"
+       data-en="INTERACTIVE EDUCATIONAL PLATFORM"
+       data-es="PLATAFORMA EDUCATIVA INTERACTIVA">
+       INTERACTIVE EDUCATIONAL PLATFORM
     </p>
 
-    <h1 data-en="DELTA MATEMÁTICA" data-es="DELTA MATEMÁTICA">
-      DELTA MATEMÁTICA
+    <h1>
+      <span data-en="Learn Mathematics" data-es="Aprende Matemática">Learn Mathematics</span>
+      <br>
+      <span data-en="in a Professional Way" data-es="de forma Profesional" class="highlight">
+        in a Professional Way
+      </span>
     </h1>
 
-    <p class="subtitle"
-       data-en="Guided examples, quizzes, games, tests, teacher resources, SIMCE, PAES, puzzles, and mathematical investigations."
-       data-es="Ejemplos guiados, cuestionarios, juegos, pruebas, recursos para profesores, SIMCE, PAES, desafíos e investigaciones matemáticas.">
-       Guided examples, quizzes, games, tests, teacher resources, SIMCE, PAES, puzzles, and mathematical investigations.
+    <p class="hero-text"
+       data-en="From Grade 4 to Grade 8. Interactive guides, activities, quizzes, assessments, games, worksheet generators, SIMCE and PAES preparation."
+       data-es="Desde 4° básico hasta 8° básico. Guías interactivas, actividades, cuestionarios, evaluaciones, juegos, generadores de guías, preparación SIMCE y PAES.">
+       From Grade 4 to Grade 8. Interactive guides, activities, quizzes, assessments, games, worksheet generators, SIMCE and PAES preparation.
     </p>
 
     <div class="hero-buttons">
-      <button data-en="Enter Student Zone" data-es="Entrar a Zona de Estudiantes">Enter Student Zone</button>
-      <button class="outline" data-en="Teacher Resources" data-es="Recursos para Profesores">Teacher Resources</button>
+      <button class="primary-btn" data-en="Explore Courses" data-es="Explorar Cursos">
+        Explore Courses
+      </button>
+      <button class="secondary-btn" data-en="How It Works" data-es="Cómo Funciona">
+        How It Works
+      </button>
     </div>
   </div>
-
-  <div class="hero-visual">
-    <div class="math-card">π</div>
-    <div class="math-card">√</div>
-    <div class="math-card">%</div>
-    <div class="math-card">Δ</div>
-  </div>
 </section>
 
-<section class="portals">
+<section class="cards-section">
 
-  <div class="portal-card">
-    <h2 data-en="Student Zone" data-es="Zona de Estudiantes">Student Zone</h2>
-    <p data-en="Interactive activities for Grades 4, 5, 6, 7, and 8."
-       data-es="Actividades interactivas para 4°, 5°, 6°, 7° y 8°.">
-       Interactive activities for Grades 4, 5, 6, 7, and 8.
+  <div class="feature-card">
+    <div class="icon blue">📘</div>
+    <h2 data-en="Interactive Guides" data-es="Guías Interactivas">Interactive Guides</h2>
+    <p data-en="Clear theory, guided examples, and step-by-step solved exercises."
+       data-es="Teoría clara, ejemplos guiados y ejercicios resueltos paso a paso.">
+       Clear theory, guided examples, and step-by-step solved exercises.
     </p>
   </div>
 
-  <div class="portal-card">
-    <h2 data-en="Teacher Zone" data-es="Zona de Profesores">Teacher Zone</h2>
-    <p data-en="Games, competitions, live scoring, and worksheet generators."
-       data-es="Juegos, competencias, puntaje en vivo y generadores de guías.">
-       Games, competitions, live scoring, and worksheet generators.
+  <div class="feature-card">
+    <div class="icon green">✏️</div>
+    <h2 data-en="Practice Activities" data-es="Actividades Prácticas">Practice Activities</h2>
+    <p data-en="Interactive exercises with immediate feedback and smart hints."
+       data-es="Ejercicios interactivos con retroalimentación inmediata y pistas inteligentes.">
+       Interactive exercises with immediate feedback and smart hints.
     </p>
   </div>
 
-  <div class="portal-card">
-    <h2 data-en="SIMCE & PAES Center" data-es="Centro SIMCE y PAES">SIMCE & PAES Center</h2>
-    <p data-en="Practice tests and national assessment preparation."
-       data-es="Pruebas de práctica y preparación para evaluaciones nacionales.">
-       Practice tests and national assessment preparation.
+  <div class="feature-card">
+    <div class="icon purple">🏆</div>
+    <h2 data-en="Live Competitions" data-es="Competencias en Vivo">Live Competitions</h2>
+    <p data-en="Math tournaments, classroom games, and live scoring dashboards."
+       data-es="Torneos matemáticos, juegos de clase y tableros con puntaje en vivo.">
+       Math tournaments, classroom games, and live scoring dashboards.
     </p>
   </div>
 
-  <div class="portal-card">
-    <h2 data-en="Recreational Math" data-es="Matemática Recreativa">Recreational Math</h2>
-    <p data-en="Puzzles, tricks, logic problems, and weekly challenges."
-       data-es="Puzzles, trucos, problemas de lógica y desafíos semanales.">
-       Puzzles, tricks, logic problems, and weekly challenges.
+  <div class="feature-card">
+    <div class="icon orange">📊</div>
+    <h2 data-en="SIMCE and PAES" data-es="SIMCE y PAES">SIMCE and PAES</h2>
+    <p data-en="Official-style practice tests, strategies, and preparation tools."
+       data-es="Pruebas tipo oficial, estrategias y herramientas de preparación.">
+       Official-style practice tests, strategies, and preparation tools.
     </p>
   </div>
 
-  <div class="portal-card">
-    <h2 data-en="Math Investigations" data-es="Investigaciones Matemáticas">Math Investigations</h2>
-    <p data-en="Interesting mathematical topics for exploration and research."
-       data-es="Temas matemáticos interesantes para explorar e investigar.">
-       Interesting mathematical topics for exploration and research.
+  <div class="feature-card">
+    <div class="icon pink">🧩</div>
+    <h2 data-en="Games and Challenges" data-es="Juegos y Desafíos">Games and Challenges</h2>
+    <p data-en="Puzzles, logic problems, tricks, investigations, and recreational math."
+       data-es="Puzzles, problemas de lógica, trucos, investigaciones y matemática recreativa.">
+       Puzzles, logic problems, tricks, investigations, and recreational math.
     </p>
   </div>
 
 </section>
+
+</main>
 
 <footer>
   <p>© 2026 Delta Matemática</p>
